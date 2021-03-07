@@ -14,8 +14,7 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 logger.setLevel(logging.INFO)
 
-logger.info(os.environ)
-
+logger.info(os.environ['GOOGLE_KEY'])
 
 
 @app.route('/')
