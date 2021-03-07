@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+from .logger import logger
 
 
 class GoogleApi:
@@ -31,6 +32,7 @@ class GoogleApi:
         longitude: float
 
         """
+        logger.info(os.environ.get('GOOGLE_KEY'))
         payload = {
             "input": "{}".format(self.keywords),
             "inputtype": "textquery",

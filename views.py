@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from grandpy.response import Response
 
+
 app = Flask(__name__)
 
 @app.route('/')
