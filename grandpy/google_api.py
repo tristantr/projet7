@@ -37,7 +37,7 @@ class GoogleApi:
             "input": "{}".format(self.keywords),
             "inputtype": "textquery",
             "fields": "formatted_address,geometry,name",
-            "key": os.environ.get("GOOGLE_KEY", json.load(open("./grandpy/config.json"))['google_key'])
+            "key": os.environ["GOOGLE_KEY"]
         }
         response = requests.get(
             "https://maps.googleapis.com/maps/api/place/findplacefromtext/json",
