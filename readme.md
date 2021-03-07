@@ -12,7 +12,7 @@ GrandpyBot is a bot that will help you to find the address of the place you are 
 
 ## Launch GrandpyBot
 
-To access GrandpyBot, go to ///
+To access GrandpyBot, go to https://grandpy-bot-tristan-tr.herokuapp.com/
 
 ## How to use 
 
