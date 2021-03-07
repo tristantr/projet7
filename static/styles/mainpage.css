@@ -1,0 +1,18 @@
+.map {
+	height: 25vh;
+	border: solid black 2px;
+}
+
+.message {
+	border-radius: 30px;
+}
+
+
+.main {
+	height: 75vh;
+}
+
+
+.discussion {
+	height: 70vh;
+}

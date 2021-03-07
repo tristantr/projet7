@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GrandPy Bot</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="/static/styles/mainpage.css" >
+
+
+</head>
+
+<body>
+
+	<header class="bg-dark container-fluid header">
+		<div class="page-header">
+			<div class="container">
+				<h3 class="py-3 text-white" >Welcome to Grandpy Bot</h3>
+			</div>
+		</div>
+	</header>	
+		
+	
+	<div class="name">
+		<div class="container">
+			<div class="row">
+				<div class="d-flex my-3">
+					<img src="../static/old-man.png" width="25" height="30">
+					<h4 class="pl-4 bd-highlight">GrandPy Bot</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main mb-2">
+		<div class="container discussion overflow-auto" id="chat">
+			 <div class="row justify-content-start">
+			 	<div class="col-8 col-md-6 message ml-5 bg-light">
+			 		<div>
+			 			<p class="p-2">Hello sweetheart, I am so glad to see you today ! Where do you want to go today? </p>
+			 		</div>
+			 	</div>
+			 </div>
+
+			 <div class="row justify-content-start">
+			 	<img src="../static/old-man.png" width="25" height="30">
+			 </div>
+
+			<template id="user-template"> 
+				<div class="row justify-content-end">
+					<div class="col-8 col-md-6 message mr-5 text-white bg-primary">
+						<p class="p-2"></p>
+					</div>
+				</div>
+
+				<div class="row justify-content-end">
+					<img src="../static/man.png" width="30" height="30">
+				</div>
+			</template>   
+
+			<template id="loading-template">
+				<p class="loading p-2">Grandpy is thinking...</p>
+			</template>
+
+			<template id="grandpy-template">
+				<div class="row justify-content-start">
+					<div class="col-8 col-md-6 message ml-5 bg-light p-3">
+						<div>
+							<p></p>
+							<p></p>
+							<div></div>
+							<br>
+							<a class="p-2 font-weight-bold">Click here if you want to know more.</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-start">
+					<img src="../static/old-man.png" width="25" height="30">
+				</div>
+			</template>
+		</div> 
+	</div>
+
+	<form id="form">
+		<div class="container mb-4">
+			<div class="row">
+				<div class="col-10">
+					<input type="text" class="form-control" id="question" required>
+				</div>
+				<div class="col-2">
+					<button type="submit" name="submit" class="btn btn-primary">Send</button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+<footer class="footer bg-dark text-center text-white">
+  <div class="text-center p-4">© 2021 Copyright: Tristan TR</div>
+  <div class="text-center pb-4">
+  	<a class="text-white border p-1" href="https://github.com/tristanttttr">Access my Github</a>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6OC2TUDHXVbjOlLkXdzIkqbUNARsBh2s">
+</script>	
+
+<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+
+</body>
+</html>
