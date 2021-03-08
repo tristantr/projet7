@@ -36,4 +36,4 @@ Here are some modules I used to build the program, all listed in the requirement
 
 ## Author
 
-Tristan TR (https://github.com/tristanttttr)
+Tristan TR (https://github.com/tristantr)

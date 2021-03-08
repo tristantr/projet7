@@ -78,6 +78,8 @@ $(document).ready(function(){
 			this.div[3].remove()
 			let error_message = "Well, I don't understand your question sweetheart... Can you be more specific?"
 			message.id = "message".concat(i)
+			this.a[0].remove()
+			this.clone.querySelectorAll('br')[0].remove()
 			this.chat.appendChild(this.clone);
 
 			$(`#${message.id}`).html(error_message)
