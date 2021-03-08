@@ -17,7 +17,7 @@ To access GrandpyBot, go to https://grandpy-bot-tristan-tr.herokuapp.com/
 ## How to use 
 
 Ask your question to Grandpy as you would ask in the real life ! 
-Here is an example: Hey Grandpy ! How are you and how is Grandma? Can you tell me the address of the Eiffel Tower ! I really want to go there !
+Here is an example: Hey Grandpy ! How are you and how is Grandma? Can you tell me the address of the Arc de Triomphe? I really want to go there !
 
 ## Built with
 

@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+	var script = document.createElement('script');
+
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB0BLe3pVR1PBJBX3S3xeJS30yZzmWQgPs';
+	script.async = true;
+	document.head.appendChild(script);
+
+
 	let i = 0
 
 	let quotes = [
